@@ -1,0 +1,9 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+  .custom-toolbar {
+    background-color: blue; 
+  color: white; 
+  margin: 0;
+  padding: 0;
+  }
