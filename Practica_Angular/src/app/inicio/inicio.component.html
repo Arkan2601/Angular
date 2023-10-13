@@ -1,27 +1,37 @@
 <p>
   <mat-toolbar class="custom-toolbar">
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-      <mat-icon>menu</mat-icon>
-    </button>
-    <span>Inicio</span>
+    <span style="margin-left: 10px;">Inicio</span>
     <span class="example-spacer"></span>
-    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-      <mat-icon>favorite</mat-icon>
+    <button mat-icon-button >
+      <mat-icon>home</mat-icon>
     </button>
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-      <mat-icon>share</mat-icon>
+    <button routerLink="/login" mat-icon-button class="example-icon" >
+      <mat-icon>lock</mat-icon>
+    </button>
+    <button  routerLink="/nosotros" mat-icon-button class="example-icon" >
+      <mat-icon>person</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon" >
+      <mat-icon>menu</mat-icon>
     </button>
   </mat-toolbar>
 </p>
 
 
-<mat-grid-list cols="2" rowHeight="2:1" gutterSize="16">
-  <mat-grid-tile></mat-grid-tile>
-  <mat-grid-tile>2</mat-grid-tile>
+<mat-grid-list cols="2" rowHeight="2:1" gutterSize="16" >
+  <mat-grid-tile class="gridStyle" style="margin: 20px;">El 20 de Octubre del 2008, el Subsecretario de Educación Superior, Dr. Rodolfo Tuirán Gutiérrez, 
+    firmó el oficio de autorización para la creación de la Universidad Tecnológica Linares, para brindar cobertura 
+    a la demanda educativa e industrial del sur del Estado, a partir de Septiembre del año 2009, se extendieron los 
+    servicios de la Universidad Tecnológica Linares al municipio de Galeana, N.L. en el ejido “El Potosí”, mismos que
+    son ofrecidos en las instalaciones, del CBTa No. 48.</mat-grid-tile>
+  <mat-grid-tile style="background-color: transparent;"><img src="/assets/logo.png" style="height:80%;width: 60%;"></mat-grid-tile>
+  
 </mat-grid-list>
 
 <br>
 
-<mat-grid-list cols="1" rowHeight="1:1" gutterSize="12">
-  <mat-grid-tile>1</mat-grid-tile>
+<mat-grid-list cols="3" rowHeight="3:2" gutterSize="10" >
+  <mat-grid-tile class="gridStyle"><img src="/assets/fondo1.jpg" style="height:100%;width:100%;"></mat-grid-tile>
+  <mat-grid-tile class="gridStyle"><img src="/assets/fondo2.jpg" style="height:100%;width: 100%;"></mat-grid-tile>
+  <mat-grid-tile class="gridStyle"><img src="/assets/historia3.jpg" style="height:100%;width: 100%;"></mat-grid-tile>
 </mat-grid-list>

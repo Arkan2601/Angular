@@ -16,10 +16,13 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatCardModule} from '@angular/material/card';
 import {MatNativeDateModule} from '@angular/material/core';
 import {MatGridListModule} from '@angular/material/grid-list';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 const appRoutes: Routes=[
   {path:'inicio',component:InicioComponent},
-  {path:'nosotros',component:NosotrosComponent}
+  {path:'nosotros',component:NosotrosComponent},
+  {path:'login',component:LoginComponent}
 ]
 
 @NgModule({
@@ -35,6 +38,8 @@ const appRoutes: Routes=[
       {enableTracing:true}
     ),
     BrowserModule,
+    MatInputModule,
+    MatFormFieldModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
