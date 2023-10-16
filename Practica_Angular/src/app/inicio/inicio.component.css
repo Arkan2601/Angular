@@ -9,6 +9,15 @@
   }
 
   .gridStyle{
-    border-radius: 20px;
+    border-radius: 10px;
+
     
   }
+  .enlarge-on-hover {
+    transition: transform 0.3s;
+  }
+  
+  .enlarge-on-hover:hover {
+    transform: scale(1.2);
+  }
+  

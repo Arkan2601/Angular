@@ -19,6 +19,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 
+
 const appRoutes: Routes=[
   {path:'inicio',component:InicioComponent},
   {path:'nosotros',component:NosotrosComponent},
@@ -53,4 +54,5 @@ const appRoutes: Routes=[
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
