@@ -20,4 +20,6 @@
   .enlarge-on-hover:hover {
     transform: scale(1.2);
   }
-  
+  .hora-actual {
+    margin-left: 1100px;
+  }

@@ -62,4 +62,12 @@ const appRoutes: Routes=[
   bootstrap: [AppComponent]
 })
 
-export class AppModule { }
+export class AppModule {
+  horaActual?: string = new Date().toLocaleTimeString();
+
+  constructor() {
+    setInterval(() => {
+      this.horaActual = new Date()?.toLocaleTimeString();
+    }, 1000);
+  }
+ }

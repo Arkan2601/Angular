@@ -2,9 +2,9 @@
   <mat-sidenav-container class="Hamburguesa">
     <mat-sidenav #sidenav mode="over" class="">
         <mat-list role="list" class="lista">
-            <mat-list-item routerLink="/login" role="listitem">Cerrar sesion</mat-list-item>
-            <mat-list-item routerLink="/Inicio" role="listitem">Inicio</mat-list-item>
-            <mat-list-item routerLink="/nosotros" role="listitem">Nosotros</mat-list-item>
+          <mat-list-item routerLink="/login" role="listitem">Cerrar sesion</mat-list-item>
+          <mat-list-item routerLink="/inicio" role="listitem">Inicio</mat-list-item>
+          <mat-list-item routerLink="/nosotros" role="listitem">Nosotros</mat-list-item>
           </mat-list>
     </mat-sidenav>
 
@@ -14,6 +14,8 @@
           <mat-icon>menu</mat-icon>
         </button>
         <span>Menú de Hamburguesa</span>
+        <span class="hora-actual">{{horaActual}}</span>
+
       </mat-toolbar>
   
     </mat-sidenav-content>

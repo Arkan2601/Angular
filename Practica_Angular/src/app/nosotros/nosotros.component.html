@@ -1,21 +1,20 @@
-<p>
-    <mat-toolbar class="custom-toolbar">
-      <span style="margin-left: 10px;">Nosotros</span>
-      <span class="example-spacer"></span>
-      <button routerLink="/inicio" mat-icon-button >
-        <mat-icon>home</mat-icon>
-      </button>
-      <button  routerLink="/login" mat-icon-button class="example-icon"  >
-        <mat-icon>lock</mat-icon>
-      </button>
-      <button  routerLink="/nosotros" mat-icon-button class="example-icon" >
-        <mat-icon>person</mat-icon>
-      </button>
-      <button  mat-icon-button class="example-icon" >
-        <mat-icon>menu</mat-icon>
-      </button>
-    </mat-toolbar>
-  </p>
+<mat-sidenav-container class="Hamburguesa">
+  <mat-sidenav #sidenav mode="over" class="">
+      <mat-list role="list" class="lista">
+        <mat-list-item routerLink="/login" role="listitem">Cerrar sesion</mat-list-item>
+        <mat-list-item routerLink="/inicio" role="listitem">Inicio</mat-list-item>
+        <mat-list-item routerLink="/menu" role="listitem">Menu</mat-list-item>
+        </mat-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content>  
+  <mat-toolbar class="custom-toolbar">
+    <button  mat-icon-button class="example-icon" mat-icon-button (click)="sidenav.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span style="margin-left: 10px;">Nosotros</span>
+    <span class="hora-actual">{{horaActual}}</span>
+  </mat-toolbar>
 
   <mat-grid-list cols="2" rowHeight="2:1" gutterSize="16">
     <mat-grid-tile class="gridStyle" style="margin: 5px; background-color: transparent;">

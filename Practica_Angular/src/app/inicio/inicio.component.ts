@@ -9,5 +9,12 @@ import {MatToolbarModule} from '@angular/material/toolbar';
   styleUrls: ['./inicio.component.css']
   
 })
-export class InicioComponent {}
-export class ToolbarOverviewExample {}
+export class InicioComponent {
+  horaActual?: string = new Date().toLocaleTimeString();
+
+  constructor() {
+    setInterval(() => {
+      this.horaActual = new Date()?.toLocaleTimeString();
+    }, 1000);
+  }
+}

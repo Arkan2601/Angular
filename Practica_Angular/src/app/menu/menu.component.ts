@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./menu.component.css']
 })
 export class MenuComponent {
+  horaActual?: string = new Date().toLocaleTimeString();
 
+  constructor() {
+    setInterval(() => {
+      this.horaActual = new Date()?.toLocaleTimeString();
+    }, 1000);
+  }
 }
