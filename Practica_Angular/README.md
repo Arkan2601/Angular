@@ -29,10 +29,12 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ![Alt text](image-1.png)
 
 <!--This is Inicio image-->
-![Alt text](image.png)
+![Alt text](image-4.png)
+![Alt text](image-5.png)
 
 <!-- This is nosotros image -->
-![Alt text](image-2.png)
+![Alt text](image-6.png)
+![Alt text](image-7.png)
 
 <!-- This is menu image -->
 ![Alt text](image-3.png)
