@@ -21,13 +21,16 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MenuComponent } from './menu/menu.component';
+import { TableComponent } from './table/table.component';
+import { MatTableModule } from '@angular/material/table';
 
 
 const appRoutes: Routes=[
   {path:'inicio',component:InicioComponent},
   {path:'nosotros',component:NosotrosComponent},
   {path:'login',component:LoginComponent},
-  {path:'menu',component:MenuComponent}
+  {path:'menu',component:MenuComponent},
+  {path:'table',component:TableComponent}
 ]
 
 @NgModule({
@@ -36,7 +39,8 @@ const appRoutes: Routes=[
     InicioComponent,
     NosotrosComponent,
     LoginComponent,
-    MenuComponent
+    MenuComponent,
+    TableComponent
   ],
   imports: [
     RouterModule.forRoot(
@@ -50,6 +54,7 @@ const appRoutes: Routes=[
     BrowserAnimationsModule,
     MatToolbarModule,
     MatSidenavModule,
+    MatTableModule,
     MatListModule,
     MatIconModule,
     MatGridListModule,
@@ -70,4 +75,5 @@ export class AppModule {
       this.horaActual = new Date()?.toLocaleTimeString();
     }, 1000);
   }
+  
  }
