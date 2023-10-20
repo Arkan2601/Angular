@@ -36,5 +36,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ![Alt text](image-6.png)
 ![Alt text](image-7.png)
 
+<!-- This is Alumnos image -->
+![Alt text](image-8.png)
+
 <!-- This is menu image -->
 ![Alt text](image-3.png)
