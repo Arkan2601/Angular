@@ -15,6 +15,13 @@
       <span >Inicio</span>
       <span class="hora-actual">{{horaActual}}</span>
     </mat-toolbar>
+    <br>
+
+
+    <button class="btn success" style="margin-left: 45%;" (click)="openPopup()">Abrir Ventana Emergente</button>
+    <br>
+<br>
+
     <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
 
         <ng-container matColumnDef="position">

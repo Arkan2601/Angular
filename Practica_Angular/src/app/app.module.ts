@@ -23,6 +23,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MenuComponent } from './menu/menu.component';
 import { TableComponent } from './table/table.component';
 import { MatTableModule } from '@angular/material/table';
+import { VentanaEmergenteComponent } from './ventana-emergente/ventana-emergente.component';
 
 
 const appRoutes: Routes=[
@@ -30,7 +31,8 @@ const appRoutes: Routes=[
   {path:'nosotros',component:NosotrosComponent},
   {path:'login',component:LoginComponent},
   {path:'menu',component:MenuComponent},
-  {path:'table',component:TableComponent}
+  {path:'table',component:TableComponent},
+  {path:'popUP',component:VentanaEmergenteComponent}
 ]
 
 @NgModule({
@@ -40,7 +42,8 @@ const appRoutes: Routes=[
     NosotrosComponent,
     LoginComponent,
     MenuComponent,
-    TableComponent
+    TableComponent,
+    VentanaEmergenteComponent
   ],
   imports: [
     RouterModule.forRoot(
@@ -75,5 +78,5 @@ export class AppModule {
       this.horaActual = new Date()?.toLocaleTimeString();
     }, 1000);
   }
-  
- }
+
+}

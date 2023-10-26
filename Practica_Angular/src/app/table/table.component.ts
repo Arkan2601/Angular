@@ -45,5 +45,45 @@ export class TableComponent {
     }, 1000);
   }
 
+  openPopup() {
 
+    const popupWindow = window.open('', '_blank', 'width=300,height=300');
+    
+    if (popupWindow) {
+
+      const popupContent = `
+        <html>
+        <head>
+          <title>Datos</title>
+        </head>
+        <body style="background-color: green;">
+          <h2 style="color:white">Insertar Datos</h2>
+          <form>
+            <input type="text" placeholder="Nombre">
+            <br>
+            <br>
+            <input type="number" placeholder="Matricula">
+            <br>
+            <br>
+            <input type="text" placeholder="Curp">
+            <br>
+            <br>
+            <input type="number" placeholder="Telefono">
+            <br>
+            <br>
+            <button style="margin-left:30%" type="submit">Enviar</button>
+          </form>
+        </body>
+        </html>
+      `;
+  
+      popupWindow.document.open();
+      popupWindow.document.write(popupContent);
+      popupWindow.document.close();
+    } else {
+
+      console.error('No se pudo abrir la ventana emergente.');
+    }
+  }
+  
 }

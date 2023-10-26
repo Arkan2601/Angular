@@ -23,3 +23,13 @@
   .hora-actual {
     margin-left: 1100px;
   }
+  .btn {
+    border: none; 
+    color: white; 
+    padding: 14px 28px; 
+    cursor: pointer; 
+    border-radius: 5px; 
+  }
+
+  .success {background-color: #04AA6D;} 
+  .success:hover {background-color: #46a049;}
